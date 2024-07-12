@@ -1,6 +1,7 @@
-import React from 'react';
-import navbarLogo from '../../public/image/navbar-logo.png'; // Adjust the path as needed
-import homeImg from '../../public/image/home-img.png'; // Adjust the path as needed
+import React from "react";
+import navbarLogo from "../../public/image/navbar-logo.png"; // Adjust the path as needed
+import homeImg from "../../public/image/home-img.png"; // Adjust the path as needed
+import ThemeController from "./elements/ThemeController";
 
 const Hero = () => {
   return (
@@ -9,8 +10,9 @@ const Hero = () => {
         <nav className="flex items-center justify-between mb-40">
           <img src={navbarLogo} alt="Logo" />
           <button className="px-7 py-3 md:px-9 md:py-4 bg-white font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500">
-           Download CV
+            Download CV
           </button>
+          <ThemeController />
         </nav>
         <div className="text-center">
           <div className="flex justify-center mb-16">
@@ -23,7 +25,8 @@ const Hero = () => {
             Full Stack Web and Mobile App Developer
           </h1>
           <p className="font-normal text-gray-600 text-md md:text-xl mb-16">
-            I have a passion for software. I enjoy creating tools that make life easier for people.
+            I have a passion for software. I enjoy creating tools that make life
+            easier for people.
           </p>
           <a
             href="#"
