@@ -7,7 +7,8 @@ export default {
   },
   plugins: [daisyui],
   daisyui: {
-    themes: ["retro", "synthwave"],
+    themes: ["retro", "dark", "synthwave"],
+    darkTheme: "synthwave",
     base: true, // applies background color and foreground color for root element by default
     styled: false, // include daisyUI colors and design decisions for all components
     utils: true, // adds responsive and modifier utility classes

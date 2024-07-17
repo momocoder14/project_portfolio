@@ -3,7 +3,7 @@ import React from "react";
 const Testimonial = () => {
   return (
     <section className="py-10 md:py-16">
-      <div className="container max-w-screen-xl mx-auto px-4">
+      <div className="container max-w-screen-xl mx-auto px-4 text-center">
         <h1 className="font-medium text-3xl md:text-4xl mb-5">Testimonial</h1>
         <p className="font-normal text-xs md:text-base mb-10 md:mb-20">
           Feedback about me

@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 
 const ThemeController = () => {
+  const [theme, setTheme] = useState("light");
+
+  const handleThemeChange = () => {
+    setTheme((prevTheme) => (prevTheme === "light" ? "synthwave" : "light"));
+  };
+
   return (
     <label className="swap swap-rotate cursor-pointer">
       {/* this hidden checkbox controls the state */}
-      <input type="checkbox" className="theme-controller  " value="synthwave" />
+      <input
+        type="checkbox"
+        className="theme-controller"
+        checked={theme === "synthwave"}
+        value={theme}
+        onChange={handleThemeChange}
+      />
 
       {/* sun icon */}
       <svg
