@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <section id="contact" className="bg-gray-100 py-16">
+    <section id="contact" className=" py-16">
       <div className="container mx-auto">
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+        <div className="rounded-lg overflow-hidden">
           <div className="p-8 md:p-12">
             <h1 className="text-3xl md:text-4xl font-extrabold mb-4 text-center">
               Let's get in touch
@@ -59,7 +59,7 @@ export default function Contact() {
                 <input
                   type="submit"
                   value="Send Message"
-                  className="bg-secondary text-white py-3 px-8 rounded-full text-lg font-semibold cursor-pointer hover:bg-tertiary transition duration-300"
+                  className="bg-primary text-white py-3 px-8 rounded-full text-lg font-semibold cursor-pointer hover:bg-gray-700 hover:text-white transition ease-linear duration-500"
                 />
               </div>
             </form>

@@ -1,38 +1,33 @@
 .projects-slider {
-    .slick-slider {
-      margin: 0 auto; /* Center the slider */
-      width: 100%; /* Ensure slider takes full width of its container */
-    }
-  
-    .slick-slide {
-      outline: none; /* Remove outline when slide is focused */
-      padding: 0 10px; /* Adjust spacing between slides */
-    }
-  
-    .slick-prev,
-    .slick-next {
-      z-index: 1; /* Ensure arrows are above slides */
-    }
-  
-    .slick-prev {
-      left: 10px; /* Adjust position of previous arrow */
-    }
-  
-    .slick-next {
-      right: 10px; /* Adjust position of next arrow */
-    }
-  
-    .slick-dots {
-      bottom: 20px; /* Adjust dots position */
-    }
-  
-    .slick-dots li button:before {
-      font-size: 12px; /* Adjust dot size */
-      color: #999; /* Adjust dot color */
-    }
-  
-    .slick-dots li.slick-active button:before {
-      color: #333; /* Adjust active dot color */
-    }
+  .slick-slider {
+    margin: 0 auto; /* Center the slider */
+    width: 100%; /* Ensure slider takes full width of its container */
   }
-  
+
+  .slick-slide {
+    outline: none; /* Remove outline when slide is focused */
+    padding: 0 10px; /* Adjust spacing between slides */
+  }
+
+  .slick-prev,
+  .slick-next {
+    z-index: 1; /* Ensure arrows are above slides */
+  }
+
+  .slick-prev {
+    left: 10px; /* Adjust position of previous arrow */
+  }
+
+  .slick-next {
+    right: 10px; /* Adjust position of next arrow */
+  }
+
+  .slick-dots li button:before {
+    font-size: 12px; /* Adjust dot size */
+    color: #999; /* Adjust dot color */
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: #333; /* Adjust active dot color */
+  }
+}
