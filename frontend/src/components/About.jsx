@@ -40,8 +40,8 @@ const About = () => {
             </div>
             <div className="bg-white border border-gray-300 rounded-lg p-6 flex flex-col items-center w-[320px]">
               <img
-                src="../../public/image/education.png"
-                alt={education}
+                src={education}
+                alt="Education icon"
                 className="w-10 h-10 mb-2"
               />
               <h3 className="text-lg font-medium text-gray-700 mb-2">
