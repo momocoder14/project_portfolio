@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className="py-10 md:py-16">
       <div className="container max-w-screen-xl mx-auto px-4">
         <div className="text-center">
-          <p className="font-normal text-gray-400 text-md md:text-lg mb-10">
+          <p className="font-normal text-gray-500 text-md md:text-lg mb-10">
             Feel free to contact me on one of the following platforms
           </p>
           <div className="flex items-center justify-center space-x-8">

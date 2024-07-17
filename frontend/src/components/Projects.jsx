@@ -35,19 +35,13 @@ const Projects = () => {
   return (
     <section id="webprojects" className="py-10 md:py-16">
       <div className="container max-w-screen-xl mx-auto px-4">
-        <p className="text-center text-lg">Browse through some of my recent</p>
+        <p className="text-gray-500 text-center text-lg">
+          Browse through some of my recent
+        </p>
         <h1 className="text-center text-3xl md:text-4xl font-medium mb-10">
           Web Apps
         </h1>
         <Slider {...settings}>
-          <div className="slide-item">
-            <ProjectItem
-              imageSrc="https://placehold.co/600x400"
-              projectTitle="Bnb Gambia"
-              githubLink="https://github.com/momocoder14/bnbGambia.git"
-              demoLink="https://bnbgambia.netlify.app"
-            />
-          </div>
           <div className="slide-item">
             <ProjectItem
               imageSrc="https://placehold.co/600x400"
@@ -80,6 +74,14 @@ const Projects = () => {
               demoLink="https://project-3-demo.netlify.app"
             />
           </div>
+          <div className="slide-item">
+            <ProjectItem
+              imageSrc="https://placehold.co/600x400"
+              projectTitle=" Notes"
+              githubLink="https://github.com/username/project-3.git"
+              demoLink="https://project-3-demo.netlify.app"
+            />
+          </div>
 
           {/* Add more ProjectItem components here */}
         </Slider>
@@ -92,7 +94,7 @@ const SampleNextArrow = (props) => {
   const { className, style, onClick } = props;
   return (
     <div
-      className={`${className} absolute top-1/2 right-0 transform -translate-y-1/2 rounded-full p-2 cursor-pointer`}
+      className={`${className} absolute top-1/2 right-0 transform -translate-y-1/2 rounded-full p-2 g-dar cursor-pointer`}
       style={{ ...style }}
       onClick={onClick}
     ></div>

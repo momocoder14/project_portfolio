@@ -15,11 +15,13 @@
   }
 
   .slick-prev {
-    left: 10px; /* Adjust position of previous arrow */
+    left: 10px;
+    color: #333; /* Adjust position of previous arrow */
   }
 
   .slick-next {
-    right: 10px; /* Adjust position of next arrow */
+    right: 10px;
+    color: #333; /* Adjust position of next arrow */
   }
 
   .slick-dots li button:before {
@@ -30,4 +32,33 @@
   .slick-dots li.slick-active button:before {
     color: #333; /* Adjust active dot color */
   }
+}
+
+.mockup-phone {
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid #000;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.camera {
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+
+.display {
+  position: relative;
+  padding: 20px;
+  background: #f0f0f0;
+}
+
+.artboard {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
 }

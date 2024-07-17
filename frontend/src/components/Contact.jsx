@@ -1,6 +1,29 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_ze4uw35",
+        "template_rxs98ny",
+        form.current,
+        "0tQErGo8-_i0xJCZs"
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <section id="contact" className=" py-16">
       <div className="container mx-auto">
@@ -9,10 +32,14 @@ export default function Contact() {
             <h1 className="text-3xl md:text-4xl font-extrabold mb-4 text-center">
               Let's get in touch
             </h1>
-            <p className="text-sm md:text-base text-gray-700 leading-relaxed text-center">
+            <p className="text-sm md:text-base text-gray-500 leading-relaxed text-center">
               We promise to respond within 24 hours.
             </p>
-            <form className="mt-8 mx-auto max-w-lg">
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              className="mt-8 mx-auto max-w-lg"
+            >
               <label
                 htmlFor="fname"
                 className="block text-sm font-semibold mb-1"

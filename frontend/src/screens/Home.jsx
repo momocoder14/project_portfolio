@@ -11,6 +11,8 @@ import Contact from "../components/Contact.jsx";
 import Projects from "../components/Projects.jsx";
 import About from "../components/About.jsx";
 import Footer from "../components/Footer.jsx";
+import Stats from "../components/elements/Stats.jsx";
+import Code from "../components/elements/Code.jsx";
 
 const Home = () => {
   return (
@@ -20,8 +22,10 @@ const Home = () => {
       <Qualities />
       <Education />
       <Experience />
+      <Code />
       <Technologies />
       <Projects />
+      <Stats />
       <Testimonial />
       <Contact />
       <Footer />
