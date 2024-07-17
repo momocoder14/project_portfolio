@@ -1,5 +1,9 @@
 import React from "react";
 
+import laravel from "../../public/image/laravel.png"; // Adjust the path as needed
+import react from "../../public/image/structure.png"; // Adjust the path as needed
+import nodejs from "../../public/image/programing.png"; // Adjust the path as needed
+
 const Technologies = () => {
   return (
     <section className="py-10 md:py-16">
@@ -9,9 +13,9 @@ const Technologies = () => {
           Some programming Languages/Frameworks I'm good at
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          <img src="../public/image/laravel.png" alt="Image" />
-          <img src="../public/image/programing.png" alt="Image" />
-          <img src="../public/image/structure.png" alt="Image" />
+          <img src={laravel} alt="Image" />
+          <img src={nodejs} alt="Image" />
+          <img src={react} alt="Image" />
         </div>
       </div>
     </section>

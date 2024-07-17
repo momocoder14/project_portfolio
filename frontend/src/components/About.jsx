@@ -1,4 +1,7 @@
 import React from "react";
+import experience from "../../public/image/experience.png"; // Adjust the path as needed
+import education from "../../public/image/education.png"; // Adjust the path as needed
+import profile from "../../public/image/profile.png"; // Adjust the path as needed
 
 const About = () => {
   return (
@@ -14,7 +17,7 @@ const About = () => {
         <div className="flex flex-col md:flex-row items-center justify-center gap-6">
           <div className="flex justify-center w-full md:w-auto md:flex-none md:h-auto">
             <img
-              src="../../public/image/about-pic.png"
+              src={profile}
               alt="Profile picture"
               className="rounded-2xl w-[320px] "
             />
@@ -22,7 +25,7 @@ const About = () => {
           <div className="flex flex-col items-center gap-6 w-full md:w-auto">
             <div className="bg-white border border-gray-300 rounded-lg p-6 flex flex-col items-center w-[320px]">
               <img
-                src="../../public/image/experience.png"
+                src={experience}
                 alt="Experience icon"
                 className="w-10 h-10 mb-2"
               />
@@ -38,7 +41,7 @@ const About = () => {
             <div className="bg-white border border-gray-300 rounded-lg p-6 flex flex-col items-center w-[320px]">
               <img
                 src="../../public/image/education.png"
-                alt="Education icon"
+                alt={education}
                 className="w-10 h-10 mb-2"
               />
               <h3 className="text-lg font-medium text-gray-700 mb-2">

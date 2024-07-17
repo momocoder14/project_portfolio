@@ -42,7 +42,7 @@ const Projects = () => {
         <Slider {...settings}>
           <div className="slide-item">
             <ProjectItem
-              imageSrc="./assets/project-1.png"
+              imageSrc="https://placehold.co/600x400"
               projectTitle="Bnb Gambia"
               githubLink="https://github.com/momocoder14/bnbGambia.git"
               demoLink="https://bnbgambia.netlify.app"
