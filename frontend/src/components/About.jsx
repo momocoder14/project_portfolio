@@ -1,7 +1,7 @@
 import React from "react";
 import experience from "../../public/image/experience.png"; // Adjust the path as needed
 import education from "../../public/image/education.png"; // Adjust the path as needed
-import profile from "../../public/image/profile.png"; // Adjust the path as needed
+import profile from "../../public/image/about-pic.png"; // Adjust the path as needed
 
 const About = () => {
   return (
