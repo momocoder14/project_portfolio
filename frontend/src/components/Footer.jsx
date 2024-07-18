@@ -41,23 +41,6 @@ const Footer = () => {
                 className="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"
               ></i>
             </a>
-            <div className="flex items-center justify-center">
-              <a
-                href="#"
-                className="w-16 h-16 flex items-center justify-center rounded-full transition ease-in-out duration-500"
-              >
-                <i
-                  data-feather="at-sign"
-                  className="text-gray-500 transition ease-in-out duration-500"
-                ></i>
-              </a>
-              <a
-                href="#"
-                className="text-gray-500 transition ease-in-out duration-500"
-              >
-                Momocoder
-              </a>
-            </div>
           </div>
         </div>
       </div>

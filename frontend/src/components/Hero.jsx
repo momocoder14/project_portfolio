@@ -1,46 +1,40 @@
 import React from "react";
-import navbarLogo from "../../public/image/favicon.png"; // Adjust the path as needed
-import homeImg from "../../public/image/profile.png"; // Adjust the path as needed
-import ThemeController from "./elements/ThemeController";
+import navbarLogo from "../../public/image/profile.png"; // Adjust the path as needed
 
 const Hero = () => {
   return (
-    <section className="py-10 md:py-16">
-      <div className="container max-w-screen-xl mx-auto px-4">
-        <nav className="flex items-center justify-between mb-40">
-          <img src={navbarLogo} className="w-10 h-10 rounded-full" alt="Logo" />
-          <button className="bg-primary text-white px-7 py-3 md:px-9 md:py-4 font-medium md:font-semibold text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500">
-            Download CV
-          </button>
-          <ThemeController />
-        </nav>
-        <div className="text-center">
-          <div className="flex justify-center mb-16">
-            <img
-              src={homeImg}
-              className=" w-40 h-40 rounded-full"
-              alt="Image"
-            />
+    <div>
+      <header id="home" className="header-area">
+        <div className="header-content relative flex items-center justify-center h-screen bg-gray-100">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div className="text-center lg:text-left">
+                <h4 className="text-lg text-gray-700">Hello, I’m</h4>
+                <h1 className="text-4xl lg:text-5xl font-bold text-gray-900">
+                 Momodou Jammeh
+                </h1>
+                <p className="text-gray-700 mt-4">
+                  A Web and Mobile App Developer
+                </p>
+                <a
+                  href="#work"
+                  className="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg mt-4 transition duration-300 ease-in-out hover:bg-blue-600"
+                >
+                  Hire me
+                </a>
+              </div>
+              <div className="hidden lg:block">
+                <img
+                  src={navbarLogo}
+                  alt="hero"
+                  className="rounded-full shadow-xl"
+                />
+              </div>
+            </div>
           </div>
-          <h6 className="font-medium text-lg md:text-2xl uppercase mb-8">
-            Momodou Jammeh
-          </h6>
-          <h1 className="font-normal text-4xl md:text-7xl leading-none mb-8">
-            Full Stack Web and Mobile App Developer
-          </h1>
-          <p className="font-normal text-md md:text-xl mb-16 text-gray-500">
-            I have a passion for software. I enjoy creating tools that make life
-            easier for people.
-          </p>
-          <a
-            href="#"
-            className="bg-primary text-white px-7 py-3 md:px-9 md:py-4 font-medium md:font-semibold text-sm rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500"
-          >
-            Hire me
-          </a>
         </div>
-      </div>
-    </section>
+      </header>
+    </div>
   );
 };
 

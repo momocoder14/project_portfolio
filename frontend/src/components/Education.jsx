@@ -1,63 +1,100 @@
 import React from "react";
 
-const Education = () => {
+const Timeline = () => {
   return (
-    <section className="py-10 md:py-16">
-      <div className="container max-w-screen-xl mx-auto px-4 text-center">
-        <h1 className="font-medium text-3xl md:text-4xl mb-5">Education</h1>
-        <p className="text-gray-500 font-normal text-xs md:text-base mb-20">
-          A summary of my education history.
+    <section className="education" id="education">
+      <div className="mb-20">
+        <h1 className="text-3xl md:text-4xl font-extrabold mb-4 text-center">
+          Education{" "}
+        </h1>
+        <p className="text-sm md:text-base text-gray-500 leading-relaxed text-center">
+          Schools that I learned from{" "}
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="bg-gray-50 px-8 py-10 rounded-md">
-            <h4 className="font-medium text-gray-700 text-lg mb-4">
-              2016 – 2019
-            </h4>
-            <p className="font-normal text-gray-500 text-md mb-4">
-              High school where I did commerce as a major.
-              <br /> <br /> Bakau Mile 7,
-              <br /> The Gambia.
-            </p>
-            <div className="relative">
-              <h6 className="font-semibold text-gray-500 text-md relative z-10">
-                Gambia Methodist Academy{" "}
-              </h6>
-            </div>
-          </div>
-          <div className="bg-gray-50 px-8 py-10 rounded-md">
-            <h4 className="font-medium text-gray-700 text-lg mb-4">
-              2021 – 2025
-            </h4>
-            <p className="font-normal text-gray-500 text-md mb-4">
-              University where I am pursuing a BSc in Information Systems <br />
-              Faraba, <br /> The Gambia.
-            </p>
-            <div className="relative">
-              <h6 className="font-semibold text-gray-500 text-md relative z-10">
-                University of The Gambia
-              </h6>
-            </div>
-          </div>
-          <div className="bg-gray-50 px-8 py-10 rounded-md">
-            <h4 className="font-medium text-gray-700 text-lg mb-4">
-              2022 – 2024
-            </h4>
-            <p className="font-normal text-gray-500 text-md mb-4">
-              A platform for learning various courses from which I learned from
-              the best of instructors <br />
-              <br />
-              Online
-            </p>
-            <div className="relative">
-              <h6 className="font-semibold text-gray-500 text-md relative z-10">
-                Udemy{" "}
-              </h6>
-            </div>
-          </div>
-        </div>
       </div>
+      <ul className="timeline timeline-vertical">
+        <li>
+          <div className="timeline-start timeline-box">
+            Bachelor's Degree in Computer Science
+            <br />
+            <span className="text-sm text-gray-500">2010 - 2014</span>
+            <br />
+            <span className="text-sm text-gray-500">
+              Major: Computer Science
+            </span>
+          </div>
+          <div className="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              className="text-primary h-5 w-5"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </div>
+          <hr className="bg-primary " />
+        </li>
+        <li>
+          <hr className="bg-primary" />
+          <div className="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              className="text-primary h-5 w-5"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </div>
+          <div className="timeline-end timeline-box">
+            Bachelor's Degree in Computer Science
+            <br />
+            <span className="text-sm text-gray-500">2010 - 2014</span>
+            <br />
+            <span className="text-sm text-gray-500">
+              Major: Computer Science
+            </span>
+          </div>
+          <hr className="bg-primary" />
+        </li>
+        <li>
+          <hr className="bg-primary" />
+          <div className="timeline-start timeline-box">
+            Bachelor's Degree in Computer Science
+            <br />
+            <span className="text-sm text-gray-500">2010 - 2014</span>
+            <br />
+            <span className="text-sm text-gray-500">
+              Major: Computer Science
+            </span>
+          </div>
+          <div className="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              className="text-primary h-5 w-5"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </div>
+          <hr />
+        </li>
+      </ul>
     </section>
   );
 };
 
-export default Education;
+export default Timeline;
