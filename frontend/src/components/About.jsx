@@ -4,8 +4,7 @@ import Education from "./Education";
 
 const Info = ()=>{
   return <section
-      id="about-me"
-      className="py-10 md:py-16 relative flex flex-col items-center"
+      className="py-10 md:py-16 relative flex flex-col items-center" 
     >
       <div className="container max-w-screen-xl mx-auto px-4">
         <p className="text-center text-gray-500">Get To Know More</p>
@@ -26,11 +25,11 @@ const Info = ()=>{
 
 const About = () => {
   return (
-    <>
+    <section id="about-me">
   <Info/>
   <Qualities />
   <Education />
-    </>
+    </section>
   );
 };
 

@@ -1,19 +1,24 @@
 /** @type {import('tailwindcss').Config} */
 import daisyui from "daisyui";
+
 export default {
-  content: ["./src/**/*.jsx"],
+  content: ["./src/**/*.jsx", "node_modules/preline/dist/*.js"],
+  darkMode: false, // This disables dark mode
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "F9F9F9",
+        secondary: "#F1F5F9",
+        pt: "#333333",
+        st: "#6B7280",
+        bb: "#F59E0B",
+        bh: "#FBBF24",
+        br: "#E5E7EB",
+      },
+    },
   },
-  plugins: [daisyui],
+  plugins: [require("preline/plugin"), require("daisyui")],
   daisyui: {
-    themes: ["light", "dark", "synthwave"],
-    darkTheme: "synthwave",
-    base: true, // applies background color and foreground color for root element by default
-    styled: false, // include daisyUI colors and design decisions for all components
-    utils: true, // adds responsive and modifier utility classes
-    prefix: "", // prefix for daisyUI classnames (components, modifiers and responsive class names. Not colors)
-    logs: true, // Shows info about daisyUI version and used config in the console when building your CSS
-    themeRoot: ":root", // The element that receives theme color CSS variables
+    themes: ["light"], // Disables DaisyUI's built-in themes if you prefer custom themes
   },
 };
