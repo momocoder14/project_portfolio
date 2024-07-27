@@ -2,7 +2,7 @@ import React from "react";
 
 const Qualities = () => {
   return (
-    <section className="container mx-auto py-10">
+    <div className="container mx-auto py-10">
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:gap-12">
         {/* Each item now takes full width on mobile and evenly divides space on larger screens */}
         <div className="relative transition-transform duration-300 ease-in-out hover:rotate-3 hover:border-primary hover:bg-white hover:shadow-lg border border-transparent p-6 rounded-lg bg-slate-100 lg:hover:rotate-6 lg:col-span-1">
@@ -83,7 +83,7 @@ const Qualities = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

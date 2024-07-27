@@ -54,93 +54,53 @@ const Navbar = () => {
             aria-expanded={isOpen}
             aria-controls="navbar-collapse-with-animation"
             onClick={handleMenuToggle}
+            aria-label="Toggle navigation menu"
           >
-            <svg
-              className={`w-5 h-5 transition-transform duration-300 ${
-                isOpen ? "hidden" : "block"
-              }`}
-              width="20"
-              height="20"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path
-                fillRule="evenodd"
-                d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 16a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              />
-            </svg>
-            <svg
-              className={`w-5 h-5 transition-transform duration-300 ${
-                isOpen ? "block" : "hidden"
-              }`}
-              width="20"
-              height="20"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path d="M6.293 5.293a1 1 0 011.414 0L10 6.586l2.293-2.293a1 1 0 111.414 1.414L11.414 8l2.293 2.293a1 1 0 01-1.414 1.414L10 9.414l-2.293 2.293a1 1 0 01-1.414-1.414L8.586 8 6.293 5.707a1 1 0 010-1.414z" />
-            </svg>
+            {isOpen ? (
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M6.293 5.293a1 1 0 011.414 0L10 6.586l2.293-2.293a1 1 0 111.414 1.414L11.414 8l2.293 2.293a1 1 0 01-1.414 1.414L10 9.414l-2.293 2.293a1 1 0 01-1.414-1.414L8.586 8 6.293 5.707a1 1 0 010-1.414z" />
+              </svg>
+            ) : (
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fillRule="evenodd"
+                  d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 16a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            )}
           </button>
         </div>
         <div
           id="navbar-collapse-with-animation"
-          className={`hs-collapse ${
+          className={`${
             isOpen ? "block" : "hidden"
-          } overflow-hidden transition-all duration-300 sm:flex sm:flex-row sm:items-center sm:justify-end`}
+          } sm:flex sm:items-center sm:justify-end transition-all duration-300`}
         >
-          <a
-            className={`py-3 px-4 font-semibold relative text-white ${
-              activeSection === "about-me" ? "text-yellow-300" : "text-gray-200"
-            } group transition-colors duration-300 hover:text-yellow-300`}
-            href="#about-me"
-            aria-current={activeSection === "about-me" ? "page" : undefined}
-            onClick={() => setIsOpen(false)}
-          >
-            About Me
-            <span
-              className={`absolute bottom-0 left-0 w-full h-0.5 ${
-                activeSection === "about-me"
-                  ? "bg-yellow-300"
-                  : "group-hover:bg-yellow-300"
-              } transition-all duration-300`}
-            />
-          </a>
-          <a
-            className={`py-3 px-4 font-semibold relative text-white ${
-              activeSection === "projects" ? "text-yellow-300" : "text-gray-200"
-            } group transition-colors duration-300 hover:text-yellow-300`}
-            href="#portfolio"
-            aria-current={activeSection === "projects" ? "page" : undefined}
-            onClick={() => setIsOpen(false)}
-          >
-            Portfolio
-            <span
-              className={`absolute bottom-0 left-0 w-full h-0.5 ${
-                activeSection === "projects"
-                  ? "bg-yellow-300"
-                  : "group-hover:bg-yellow-300"
-              } transition-all duration-300`}
-            />
-          </a>
-          <a
-            className={`py-3 px-4 font-semibold relative text-white ${
-              activeSection === "contact-me"
-                ? "text-yellow-300"
-                : "text-gray-200"
-            } group transition-colors duration-300 hover:text-yellow-300`}
-            href="#contact-me"
-            aria-current={activeSection === "contact-me" ? "page" : undefined}
-            onClick={() => setIsOpen(false)}
-          >
-            Contact Me
-            <span
-              className={`absolute bottom-0 left-0 w-full h-0.5 ${
-                activeSection === "contact-me"
-                  ? "bg-yellow-300"
-                  : "group-hover:bg-yellow-300"
-              } transition-all duration-300`}
-            />
-          </a>
+          {[
+            { id: "about-me", label: "About Me" },
+            { id: "myportfolio", label: "Portfolio" },
+            { id: "contact-me", label: "Contact Me" },
+          ].map(({ id, label }) => (
+            <a
+              key={id}
+              className={`py-3 px-4 font-semibold relative text-white ${
+                activeSection === id ? "text-yellow-300" : "text-gray-200"
+              } group transition-colors duration-300 hover:text-yellow-300`}
+              href={`#${id}`}
+              aria-current={activeSection === id ? "page" : undefined}
+              onClick={() => setIsOpen(false)}
+            >
+              {label}
+              <span
+                className={`absolute bottom-0 left-0 w-full h-0.5 ${
+                  activeSection === id
+                    ? "bg-yellow-300"
+                    : "group-hover:bg-yellow-300"
+                } transition-all duration-300`}
+              />
+            </a>
+          ))}
         </div>
       </nav>
     </header>

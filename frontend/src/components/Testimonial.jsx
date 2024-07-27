@@ -35,7 +35,7 @@ const testimonials = [
 export default function App() {
   return (
     <>
-     <section className="relative max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+     <div className="relative max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       <h2 className="text-center text-2xl font-semibold text-gray-800 mb-12">
         What Our Clients Say
       </h2>
@@ -90,7 +90,7 @@ export default function App() {
         ))}
       </Swiper>
             </div>
-    </section>
+    </div>
 
     </>
   );

@@ -11,7 +11,7 @@ const Hero = () => {
   const closeModal = () => setModalOpen(false);
 
   return (
-    <header
+    <section
       id="home"
       className="relative flex items-center justify-center h-screen overflow-hidden text-white bg-cover bg-center"
       style={{ backgroundImage: 'url("/path/to/your/background-image.jpg")' }}
@@ -56,7 +56,7 @@ const Hero = () => {
         </div>
       </div>
       <ContactModal isOpen={isModalOpen} onClose={closeModal} />
-    </header>
+    </section>
   );
 };
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
+import profileLogo  from '../../public/image/profile.png'
 
 const ContactModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
@@ -19,7 +20,7 @@ const ContactModal = ({ isOpen, onClose }) => {
         {/* LinkedIn Mini Profile */}
         <div className="flex items-center mb-6">
           <img
-            src="https://via.placeholder.com/100" // Replace with your LinkedIn profile image URL
+            src={profileLogo} // Replace with your LinkedIn profile image URL
             alt="Profile"
             className="w-24 h-24 rounded-full border-2 border-gray-300 object-cover"
           />
@@ -27,7 +28,7 @@ const ContactModal = ({ isOpen, onClose }) => {
             <h3 className="text-xl font-semibold">Momodou Jammeh</h3>
             <p className="text-gray-600">Web and Mobile App Developer</p>
             <a
-              href="https://www.linkedin.com/in/your-profile" // Replace with your LinkedIn profile URL
+              href="https://www.linkedin.com/in/momocoder" // Replace with your LinkedIn profile URL
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center text-blue-600 hover:text-blue-800 mt-2 text-lg font-medium"

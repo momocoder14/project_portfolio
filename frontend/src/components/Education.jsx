@@ -2,7 +2,7 @@ import React from "react";
 
 const Timeline = () => {
   return (
-    <section className="max-w-5xl mx-auto px-4 py-10" id="education">
+    <div className="max-w-5xl mx-auto px-4 py-10" >
       <div className="mb-20 text-center">
         <h2 className="text-2xl font-bold text-gray-800">Education Timeline</h2>
       </div>
@@ -89,7 +89,7 @@ const Timeline = () => {
           </div>
         </li>
       </ul>
-    </section>
+    </div>
   );
 };
 

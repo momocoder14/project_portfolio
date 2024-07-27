@@ -15,7 +15,7 @@ const Footer = () => {
           </p>
           <div className="flex items-center justify-center space-x-8">
             <a
-              href="#"
+              href="https://x.com/_codewithmo"
               className="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500"
             >
               <i
@@ -24,7 +24,7 @@ const Footer = () => {
               ></i>
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/momocoder"
               className="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500"
             >
               <i
@@ -33,11 +33,11 @@ const Footer = () => {
               ></i>
             </a>
             <a
-              href="#"
+              href="https://github.com/momocoder14"
               className="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500"
             >
               <i
-                data-feather="instagram"
+                data-feather="github"
                 className="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"
               ></i>
             </a>
