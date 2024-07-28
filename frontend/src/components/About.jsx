@@ -1,13 +1,13 @@
 import React from "react";
 
 const InfoSection = ({ title, description }) => (
-  <div className="py-16 relative flex flex-col items-center">
+  <div className="py-4 relative flex flex-col items-center">
     <div className="container max-w-screen-xl mx-auto px-4">
       <p className="text-center text-gray-500">Get To Know More</p>
-      <h1 className="text-3xl md:text-4xl font-medium mb-5 text-center">
+      <h1 className="text-3xl md:text-4xl font-medium mb-4 text-center">
         {title}
       </h1>
-      <div className="mt-8 md:mt-12 text-center max-w-prose mx-auto">
+      <div className="mt-4 text-center max-w-prose mx-auto">
         <p className="leading-relaxed text-gray-500">{description}</p>
       </div>
     </div>
@@ -40,8 +40,8 @@ const FeatureCard = ({ title, description }) => (
 );
 
 const EducationTimeline = () => (
-  <div className="max-w-5xl mx-auto px-4 py-4">
-    <div className="mb-20 text-center">
+  <div className="max-w-5xl mx-auto py-4">
+    <div className="mb-10 text-center">
       <h2 className="text-2xl font-bold text-gray-800">Education Timeline</h2>
     </div>
     <ul className="timeline timeline-vertical relative">
@@ -113,7 +113,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about-me" className="py-12">
+    <section id="about-me">
       <InfoSection
         title="About Me"
         description="I am a dedicated web and mobile app developer, creating elegant and efficient solutions with a focus on clean code. Let my experience elevate your projects and captivate your audience."

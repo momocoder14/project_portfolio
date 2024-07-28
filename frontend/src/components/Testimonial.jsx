@@ -11,16 +11,17 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
-import profile from "../../public/image/profile.png"; // Adjust the path as needed
+import profile from "/image/profile.png"; // Adjust the path as needed
+import linkedin from "/image/linkedin.jpg"; // Adjust the path as needed
 
 const testimonials = [
   {
     id: 1,
     text: "Momocoder is one of the best developers I have ever met. I highly recommend him to everyone out there.",
     image:
-      "https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/6713806/3500/2330/m1/fpnw/wm0/logos-21-77-.jpg?1563702063&s=c25446499054f94d550e28c39b63e932",
-    name: "Kawsu",
-    role: "CEO | Kit",
+      linkedin,
+    name: "Ngagne Bah",
+    role: "Backend Engineer | Linkedin",
   },
   {
     id: 2,

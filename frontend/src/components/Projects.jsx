@@ -11,6 +11,10 @@ import nodeLogo from "/image/programing.png"; // Ensure this path is correct
 import reactLogo from "/image/structure.png"; // Ensure this path is correct
 import laravelLogo from "/image/laravel.png"; // Ensure this path is correct
 import flutterLogo from "/image/flutter.png"; // Ensure this path is correct
+import linkedinLogo from "/image/linkedin.jpg"; // Adjust the path as needed
+import gomindzLogo from "/image/gomindz_logo.jpeg"; // Adjust the path as needed
+import utgLogo from "/image/utg.png"; // Adjust the path as needed
+
 import { FaAppStore,FaGooglePlay } from "react-icons/fa";
 
 
@@ -45,17 +49,23 @@ const testimonials = [
   {
     id: 1,
     text: "Momocoder is one of the best developers I have ever met. I highly recommend him to everyone out there.",
-    image:
-      "https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/6713806/3500/2330/m1/fpnw/wm0/logos-21-77-.jpg?1563702063&s=c25446499054f94d550e28c39b63e932",
-    name: "Kawsu",
-    role: "CEO | Kit",
+    image:linkedinLogo,
+    name: "Ngagne Bah",
+    role: "Backeend Engineer | Linkedin",
   },
   {
     id: 2,
     text: "Exceptional work! Their attention to detail and commitment to the project were impressive.",
-    image: "https://placekitten.com/200/200",
-    name: "Alex",
-    role: "CTO | TechCorp",
+    image: gomindzLogo,
+    name: "Modou Lamin Jagne",
+    role: "CTO | Gomindz",
+  },
+  {
+    id: 3,
+    text: "Exceptional work! Their attention to detail and commitment to the project were impressive.",
+    image: utgLogo,
+    name: "Muhammed Marong",
+    role: "Lecturer | University of The Gambia",
   },
   // Add more testimonials here
 ];
@@ -70,7 +80,7 @@ const Technologies = () => {
   ];
 
   return (
-    <div className="flex flex-wrap justify-center gap-6 md:gap-8">
+    <div className="flex flex-wrap justify-center gap-6 md:gap-8 p-4">
       {technologies.map((tech, index) => (
         <a
           key={index}
@@ -192,19 +202,19 @@ const MobileAppsSection = () => {
 
 const Projects = () => {
   return (
-    <section id="myportfolio" className="py-12">
-      <div className="max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-        <div className="text-center mb-12">
+    <section id="myportfolio">
+      <div className="max-w-7xl px-4 py-4 sm:px-6 lg:px-8 mx-auto">
+        <div className="text-center mb-4">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
             Proficient in Various Technologies
           </h2>
-          <p className="text-gray-600 mt-2">
+          <p className="text-gray-600 mt-4">
             Leveraging a wide range of tools and technologies to build robust
             and scalable applications.
           </p>
         </div>
         <Technologies />
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center">
+        <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center">
           <div className="flex flex-col items-center">
             <h4 className="text-3xl font-semibold text-gray-800">25+</h4>
             <p className="text-sm text-gray-600">Projects</p>
@@ -220,7 +230,7 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="py-16">
+      <div className="py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-4xl font-extrabold text-gray-900 mb-4">
@@ -276,7 +286,7 @@ const Projects = () => {
 
       <MobileAppsSection />
 
-      <div className="relative max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+      <div className="relative max-w-7xl px-4 py-4 sm:px-6 lg:px-4 lg:py-4 mx-auto">
         <h2 className="text-center text-2xl font-semibold text-gray-800 mb-12">
           What Our Clients Say
         </h2>

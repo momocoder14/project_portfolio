@@ -33,10 +33,10 @@ export default function Contact() {
 
   return (
     <section
-      className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8"
+      className="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8"
       id="contact-me"
     >
-      <div className="bg-gradient-to-r from-blue-50 to-teal-50 p-8 rounded-lg shadow-lg">
+      <div className="bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 p-8 rounded-lg shadow-lg">
         <div className="text-center mb-12">
           <h1 className="text-5xl font-extrabold text-gray-900 mb-4 animate-fadeIn">
             Get in Touch
@@ -65,9 +65,9 @@ export default function Contact() {
                   <FaEnvelope className="text-blue-600 w-6 h-6 group-hover:scale-125 transition-transform" />
                   <a
                     href="mailto:momocoder@codewithmo.com"
-                    className="text-lg font-medium text-gray-900 group-hover:text-blue-600 transition-colors"
+                    className="text-lg font-medium text-gray-900 group-hover:text-blue-600 transition-colors overflow-hidden"
                   >
-                    momocoder@codewithmo.com
+                    @codewithmo.com
                   </a>
                 </div>
               </div>

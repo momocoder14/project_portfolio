@@ -14,7 +14,7 @@ const Hero = () => {
     <section
       id="home"
       className="relative flex items-center justify-center h-screen overflow-hidden text-white bg-cover bg-center"
-      style={{ backgroundImage: 'url("/path/to/your/background-image.jpg")' }}
+      style={{ backgroundImage: 'url("/image/bgmain.jpg")' }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-blue-800 to-teal-700 opacity-60 animate-background"></div>
       <div className="container mx-auto px-4 relative z-10">
