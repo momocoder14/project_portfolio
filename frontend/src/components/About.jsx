@@ -15,7 +15,7 @@ const InfoSection = ({ title, description }) => (
 );
 
 const FeatureCard = ({ title, description }) => (
-  <div className="relative transition-transform duration-300 ease-in-out hover:rotate-3 hover:border-primary hover:bg-white hover:shadow-lg border border-transparent p-6 rounded-lg bg-slate-100 lg:hover:rotate-6 lg:col-span-1">
+  <div className="relative transition-transform duration-300 ease-in-out md:hover:border-primary md:hover:bg-white md:hover:shadow-lg border border-transparent p-6 rounded-lg bg-slate-100 lg:hover:rotate-6 lg:col-span-1">
     <div className="relative z-10">
       <h2 className="text-xl font-bold capitalize mb-3 flex items-center space-x-4">
         <div className="w-6 h-6 flex items-center justify-center rounded-full bg-gradient shadow-lg shadow-rose-500/50">
@@ -40,18 +40,18 @@ const FeatureCard = ({ title, description }) => (
 );
 
 const EducationTimeline = () => (
-  <div className="max-w-5xl mx-auto px-4 py-10">
+  <div className="max-w-5xl mx-auto px-4 py-4">
     <div className="mb-20 text-center">
       <h2 className="text-2xl font-bold text-gray-800">Education Timeline</h2>
     </div>
     <ul className="timeline timeline-vertical relative">
       <li className="relative">
         <div className="timeline-start timeline-box bg-gray-100 p-4 rounded-lg shadow-md">
-          Bachelor's Degree in Computer Science
+          High School Certificate | G.M.A
           <br />
-          <span className="text-sm text-gray-500">2010 - 2014</span>
+          <span className="text-sm text-gray-500">2016 - 2019</span>
           <br />
-          <span className="text-sm text-gray-500">Major: Computer Science</span>
+          <span className="text-sm text-gray-500">Major: Commerce</span>
         </div>
         <div className="timeline-middle">
           <svg
@@ -86,12 +86,12 @@ const EducationTimeline = () => (
           </svg>
         </div>
         <div className="timeline-end timeline-box bg-gray-100 p-4 rounded-lg shadow-md">
-          Master's Degree in Software Engineering
+          Bachelor's Degree | U.T.G
           <br />
-          <span className="text-sm text-gray-500">2015 - 2017</span>
+          <span className="text-sm text-gray-500">2020 - 2025</span>
           <br />
           <span className="text-sm text-gray-500">
-            Major: Software Engineering
+            Major: Information Systems
           </span>
         </div>
       </li>
@@ -113,24 +113,24 @@ const About = () => {
   ];
 
   return (
-    <section id="about-me" className="py-16">
+    <section id="about-me" className="py-12">
       <InfoSection
         title="About Me"
-        description="I'm an enthusiastic backend engineer with fluency in JavaScript, with a focus on Node.js. I try to create elegant solutions that are memorable, with a strong focus on clean code. Allow my experience to add value to your work and draw in viewers."
+        description="I am a dedicated web and mobile app developer, creating elegant and efficient solutions with a focus on clean code. Let my experience elevate your projects and captivate your audience."
       />
-      <div className="container mx-auto py-10">
+      <div className="container mx-auto py-4">
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:gap-12">
           <FeatureCard
-            title="UI/UX Design"
-            description="A good design keeps a user interested in your website and not click away as soon as it loads."
+            title="Efficient Code"
+            description="Writing clean, efficient code ensures that your website runs smoothly and reliably, providing a seamless experience for your users."
           />
           <FeatureCard
-            title="Responsive & Mobile Designs"
-            description="This is really important as almost half of the web's traffic is from mobile devices."
+            title="Innovative Solutions"
+            description="Creating unique solutions that set your projects apart and ensure a memorable user experience."
           />
           <FeatureCard
-            title="Content Management Systems"
-            description="Connect clients' websites to popular content management systems like Strapi, WordPress, and Contentful."
+            title="Performance Optimization"
+            description="Ensuring your website is fast and responsive, providing a seamless user experience that keeps visitors engaged."
           />
         </div>
       </div>

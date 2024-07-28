@@ -7,6 +7,10 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import mock from "/image/mock.png"; // Ensure this path is correct
 import mockweb from "/image/mockweb.png"; // Ensure this path is correct
 import profile from "/image/profile.png"; // Ensure this path is correct
+import nodeLogo from "/image/programing.png"; // Ensure this path is correct
+import reactLogo from "/image/structure.png"; // Ensure this path is correct
+import laravelLogo from "/image/laravel.png"; // Ensure this path is correct
+import flutterLogo from "/image/flutter.png"; // Ensure this path is correct
 import { FaAppStore,FaGooglePlay } from "react-icons/fa";
 
 
@@ -58,8 +62,10 @@ const testimonials = [
 
 const Technologies = () => {
   const technologies = [
-    { src: "https://placekitten.com/200/200", alt: "Technology 1" },
-    { src: "https://placekitten.com/200/200", alt: "Technology 2" },
+    { src: reactLogo, alt: "React and React Native" },
+    { src: nodeLogo, alt: "Node Js" },
+    { src: laravelLogo, alt: "Laravel" },
+    { src: flutterLogo, alt: "Flutter" },
     // Add more technologies as needed
   ];
 
@@ -118,7 +124,7 @@ const MobileAppsSection = () => {
   ];
 
   return (
-    <div className="py-16 bg-gray-50">
+    <div className="py-4 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-extrabold text-gray-900 mb-4">
@@ -186,7 +192,7 @@ const MobileAppsSection = () => {
 
 const Projects = () => {
   return (
-    <section id="myportfolio" className="py-16">
+    <section id="myportfolio" className="py-12">
       <div className="max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
